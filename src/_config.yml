@@ -39,7 +39,7 @@ keep_files: [assets]
 collections:
     topic-web-design:
         output: true
-        permalink: /blog/topic-web-design/:path/
+        permalink: /blog/topic-digital-marketing/:path/
     topic-web-analytics:
         output: true
         permalink: /blog/topic-web-analytics/:path/

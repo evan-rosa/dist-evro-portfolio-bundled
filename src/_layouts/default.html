@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-56KWJ8F');</script>
+        <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="alternate" href="https://evanrosaportfolio.com" hreflang="en-us" />
+        <meta name="msvalidate.01" content="9697989B6A63107D1F0DCCF9F8E5CC3A" />
+        {% if page.url == "/404.html" %}
+        <meta http-equiv="refresh" content="180; url=/">
+        {% endif %}
+        <link rel="icon" href="https://evanrosaportfolio.com/assets/img/pics/logo-blk.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="{{'/assets/css/app.css' | prepend: site.baseurl }}" type="text/css" media="all">
+
+        <!-- Inline critical css -->
+        <!--<style type="text/css">{% include critical-index.css %}</style>-->
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+        <!-- Load CSS -->
+        <!--<script type="text/javascript">{% include loadCSS.js %}</script>-->
+
+        {% seo %}
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56KWJ8F"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div class="reveal medium" id="exampleModal1" data-reveal>
+            <div class="row">
+                <div class="small-12 columns text-center">
+                    <p class="lead">Thank you for visiting my portfolio!</p>
+                    <p>Please feel free to review any of my credentials and if you have any questions please fill out the <a style="color:inherit;" href="#contact"><strong>contact information</strong></a> information below.</p>
+                    <button class="close-button" data-close aria-label="Close modal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+        <script>
+            window.store = {
+                {% for topic-all in site.topic-all %}
+            "{{ topic-all.url | slugify }}": {
+                "title": "{{ topic-all.title | xml_escape }}",
+                    "author": "{{ topic-all.author | xml_escape }}",
+                        "category": "{{ topic-all.category | xml_escape }}",
+                            "content": {{ topic-all.excerpt | strip_html | strip_newlines | jsonify }},
+                                "url": "{{ topic-all.url | xml_escape }}"
+            }
+            {% unless forloop.last %},{% endunless %}
+            {% endfor %}
+            };
+        </script>
+        <!-- Load css -->
+       <!-- <script>
+            loadCSS('/assets/css/app.css', false, 'screen');
+        </script>
+
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/app.css">
+        </noscript>-->
+
+
+        <script async src="{{ '/assets/js/app.js' | prepend: site.baseurl }}"></script>
+
+        <script id="dsq-count-scr" src="//evrodesigns.disqus.com/count.js" async></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,80 @@
+---
+layout: default
+title: Evan Rosa's Blog Search
+description: Blog Search | Evan Rosa
+author: Evan Rosa
+image: /assets/img/svg/logo.svg
+permalink: /search/
+canonical-url: https://evanrosaportfolio.com/search/
+---
+
+<!--Section One: Main Intro with office background -->
+<section data-scrollmagic id="intro" data-magellan-target="intro" class="introduction parallaxParent parallaxParent-intro">
+    <div class="office-back transform-back" data-interchange="[../assets/img/pics/macbook.jpg, default], [../assets/img/pics/macbook.jpg, small], [../assets/img/pics/macbook-m.jpg, medium], [../assets/img/pics/macbook-l.jpg, large], [../assets/img/pics/macbook-xl.jpg, xlarge], [../assets/img/pics/macbook-xxl.jpg, xxlarge], [../assets/img/pics/macbook-retina.jpg, retina]">
+        <noscript><img src="../assets/img/pics/macbook.jpg" alt="Evan Rosa's Blog Search"></noscript>
+    </div>
+
+    <div class="intro-text blog-intro">
+        <div class="row">
+            <div class="small-12 columns text-left">
+                <h1 class="other-title" id="name">Search</h1>
+            </div>
+        </div>
+        <div class="row">
+           <div class="columns">
+               <form action="{{site.baseurl}}/search/" method="get">
+                   <div class="row">
+                       <div class="small-6 columns">
+                           <input id="itype" type="text" id="search-box" name="q">
+
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div id="intro-btn" class="columns">
+                           <input data-description="search-page" id="search-page" class="small button" type="submit" value="search">
+                           <p>Please scroll down to view search results</p>
+                       </div>
+                   </div>
+               </form>
+           </div>
+        </div>
+        <div class="row down-svg" data-magellan id="test">
+            <a id="intro-arrow" class="small-12 columns text-center" href="#search">
+                <div id="arrow-d">
+                    <object id="test1" data="/assets/img/svg/down-ar.svg" type="image/svg+xml"><img src="/assets/img/pics/down-ar.png" alt="{{page.title}}"></object>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<section data-scrollmagic id="search" class="who search-min-height">
+
+
+    <div class="row">
+        <div class="small-12 columns h2-box">
+            <h2 class="parent-animation"><strong>Search Results</strong></h2>
+            <hr class="block-animate">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="small-12 columns">
+            <ul id="search-results" class="no-bullet block-animate"></ul>
+        </div>
+    </div>
+
+
+
+
+
+</section>
+{% include contact.html %}
+
+
+
+
+
+

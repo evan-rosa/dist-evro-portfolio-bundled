@@ -1,0 +1,27 @@
+{% assign sorted = (site.topic-web-analytics | sort: 'date') | reverse %}
+{% for topic-web-analytics in sorted %}
+<div class="medium-6 large-4 small-12 columns">
+    <article class="article-card">
+        <a href="{{ topic-web-analytics.url }}">
+            <img class="art-img" src="{{site.baseurl}}/assets/img/pics/{{ topic-web-analytics.img }}">
+        </a>
+        <div class="card-content">
+            <div class="post-icon">
+                <img class="blog-icon" src="{{site.baseurl}}/assets/img/svg/{{ topic-web-analytics.svg }}" alt="foundation icon">
+            </div>
+
+            <p class="post-author">By <a href="../#home">{{ topic-web-analytics.author }}</a></p>
+            <p>{{topic-web-analytics.date | date: '%B %d, %Y'}}</p>
+            <a href="{{ topic-web-analytics.url }}">
+                <h1 class="card-h1"><strong>{{ topic-web-analytics.title }}</strong></h1>
+            </a>
+            <!--{{ post.content }}-->
+            {{ topic-web-analytics.excerpt }}
+            <p>
+                <a href="{{ topic-web-analytics.url }}" id="intro-btn" class="tiny button"><span data-description="Button - subscribe to blog" id="get-btn">Read on</span></a>
+            </p>
+            <!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox addthis-pad" data-url="{{site.baseurl}}{{ topic-web-analytics.url }}" data-title="{{ topic-web-analytics.title }}"></div>
+        </div>
+    </article>
+</div>
+{% endfor %}

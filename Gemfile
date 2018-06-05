@@ -2,13 +2,13 @@
 source "https://rubygems.org"
 
 group :jekyll do
- gem 'jekyll', '~> 3.3', '>= 3.3.1'
+ gem 'jekyll', 
  gem 'jekyll-paginate'
- gem 'jekyll-seo-tag', '~> 1.1'
- gem 'jekyll-sitemap', '~> 0.12.0'
+ gem 'jekyll-seo-tag', 
+ gem 'jekyll-sitemap',
  gem 'wiselinks'
- gem 'builder', '~> 3.2', '>= 3.2.3'
- gem 'rubygems-update', '~> 2.6', '>= 2.6.8'
+ gem 'builder', 
+ gem 'rubygems-update', 
  gem 'therubyracer'
 end
 

@@ -8,7 +8,7 @@ description: Explaining the various workflow phases to build a brand new website
 author: Evan Rosa
 comments: true
 # other options
-canonical-url: https://evanrosaportfolio.com/blog/topic-web-design/2016-12-15-website-planning-101/
+canonical-url: https://evanrosaportfolio.com/blog/topic-web-development/2016-12-15-website-planning-101/
 ---
 
 <article>

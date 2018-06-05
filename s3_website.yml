@@ -3,7 +3,7 @@
 # ~/.aws/credentials.
 s3_id: AKIAIUEXMZGH24PRIZKQ
 s3_secret: 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
-s3_bucket: evrodesigns.com
+s3_bucket: evanrosaportfolio.com
 site: dist
 
 # set session_token if using temporary credentials with a session token (eg: when assuming a role)

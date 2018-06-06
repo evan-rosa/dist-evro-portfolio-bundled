@@ -29,7 +29,7 @@ social:
 markdown: kramdown
 
 # Assets are being handled by Gulp
-exclude: [assets]
+exclude: [assets], [vendor]
 keep_files: [assets]
 
 

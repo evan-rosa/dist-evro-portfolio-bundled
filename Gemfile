@@ -2,7 +2,7 @@
 source "https://rubygems.org"
 
 group :jekyll do
- gem 'jekyll', '~> 3.3', '>= 3.3.1' :path => File.expand_path("../jekyll", __dir__)
+ gem 'jekyll', '~> 3.8.3',
  gem 'jekyll-paginate'
  gem 'jekyll-seo-tag', '~> 1.1'
  gem 'jekyll-sitemap', '~> 0.12.0'

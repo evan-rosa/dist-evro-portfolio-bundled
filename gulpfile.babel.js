@@ -8,7 +8,7 @@ var cp       = require('child_process');
 var critical = require('critical');
 
 const babel = require('gulp-babel');
-const gutil = require('gulp-util');
+const fancylog = require('fancy-log');
 
 // Check for --production flag
 var isProduction = !!(argv.production);
@@ -85,7 +85,7 @@ gulp.task('jekyll', () => {
     const jekyllLogger = (buffer) => {
         buffer.toString()
             .split(/\n/)
-            .forEach((message) => gutil.log('Jekyll: ' + message));
+            .forEach((message) => fancylog('Jekyll: ' + message));
     };
 
     jekyll.stdout.on('data', jekyllLogger);

@@ -78,3 +78,6 @@ DEPENDENCIES
   rubygems-update (~> 2.6, >= 2.6.8)
   therubyracer
   wiselinks
+
+BUNDLED WITH
+   1.16.2

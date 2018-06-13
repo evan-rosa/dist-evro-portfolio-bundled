@@ -6,7 +6,9 @@ var rimraf   = require('rimraf');
 var sequence = require('run-sequence');
 var cp       = require('child_process');
 var critical = require('critical');
+var postcss = require('gulp-postcss');
 
+const cleanCSS = require('gulp-clean-css');
 const babel = require('gulp-babel');
 const fancylog = require('fancy-log');
 
@@ -99,7 +101,7 @@ gulp.task('jekyll:reset', ['jekyll'], function () {
 // Compile Sass into CSS
 // In production, the CSS is compressed
 gulp.task('sass', function() {
-    var uncss = $.if(isProduction, $.uncss({
+    var uncss = $.if(isProduction, $.postcss({
         html: ['src/**/*.html'],
         ignore: [
             new RegExp('.foundation-mq'),
@@ -107,7 +109,7 @@ gulp.task('sass', function() {
         ]
     }));
 
-    var minifycss = $.if(isProduction, $.minifyCss());
+   // var minifycss = $.if(isProduction, $.minifyCss());
 
     return gulp.src('src/assets/scss/app.scss')
         .pipe($.sourcemaps.init())
@@ -119,7 +121,7 @@ gulp.task('sass', function() {
         browsers: COMPATIBILITY
     }))
         .pipe(uncss)
-        .pipe(minifycss)
+        .pipe(cleanCSS())
         .pipe($.if(!isProduction, $.sourcemaps.write()))
         .pipe(gulp.dest('dist/assets/css'))
         .pipe(browser.reload({ stream: true }));

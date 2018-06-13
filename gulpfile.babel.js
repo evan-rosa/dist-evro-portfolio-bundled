@@ -19,7 +19,7 @@ var isProduction = !!(argv.production);
 var PORT = 8000;
 
 // Browsers to target when prefixing CSS.
-var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
+var COMPATIBILITY = ['last 2 versions'];
 
 // File paths to various assets are defined here.
 var PATHS = {

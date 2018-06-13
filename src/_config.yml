@@ -11,7 +11,7 @@ plugins: [jekyll-seo-tag, jekyll-sitemap, jekyll-paginate]
 paginate: 6
 
 stageurl: "http://localhost:8000/"
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://evanrosaportfolio.com" # the base hostname & protocol for your site
 github:username:  evr01
 social:

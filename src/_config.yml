@@ -7,7 +7,6 @@
 
 
 # Site settings
-source:  .
 plugins: [jekyll-seo-tag, jekyll-sitemap, jekyll-paginate]
 paginate: 6
 

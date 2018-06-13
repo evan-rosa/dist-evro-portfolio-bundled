@@ -124,7 +124,7 @@ gulp.task('sass', function() {
         .pipe(cleanCSS())
         .pipe($.if(!isProduction, $.sourcemaps.write()))
         .pipe(gulp.dest('dist/assets/css'))
-        .pipe(browser.reload({ stream: true }));
+        .pipe(browser.reload({ stream: false }));
 });
 
 // Combine JavaScript into one file

@@ -7,6 +7,9 @@
 
 
 # Site settings
+source: src
+liquid:
+  error_mode: strict
 plugins: [jekyll-seo-tag, jekyll-sitemap, jekyll-paginate]
 paginate: 6
 

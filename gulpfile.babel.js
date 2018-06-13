@@ -19,7 +19,7 @@ var isProduction = !!(argv.production);
 var PORT = 8000;
 
 // Browsers to target when prefixing CSS.
-var COMPATIBILITY = ['last 2 versions'];
+var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
 
 // File paths to various assets are defined here.
 var PATHS = {
@@ -124,7 +124,7 @@ gulp.task('sass', function() {
         .pipe(cleanCSS())
         .pipe($.if(!isProduction, $.sourcemaps.write()))
         .pipe(gulp.dest('dist/assets/css'))
-        .pipe(browser.reload({ stream: false }));
+        .pipe(browser.reload({ stream: true }));
 });
 
 // Combine JavaScript into one file

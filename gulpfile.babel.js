@@ -139,7 +139,7 @@ gulp.task('javascript', function() {
 
     return gulp.src(PATHS.javascript)
         .pipe($.sourcemaps.init())
-        .pipe(babel({presets: ['es2015']}))
+        .pipe(babel({presets: ['env']}))
         .pipe($.concat('app.js'))
         .pipe(uglify)
         .pipe($.if(!isProduction, $.sourcemaps.write()))

@@ -1,8 +1,9 @@
 //Foundation JS
 $(document).foundation();
 
-var popup = new Foundation.Reveal($('#exampleModal1'));
-popup.open();
+//Disabled Modal Reveal
+//var popup = new Foundation.Reveal($('#exampleModal1'));
+//popup.open();
 
 //Title Bar Sticky
 $('.sticky').on('sticky.zf.stuckto:top', function () {

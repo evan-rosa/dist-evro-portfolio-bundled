@@ -21,9 +21,6 @@
 
         <script async src='https://www.google-analytics.com/analytics.js'></script>
 
-        <!-- Load CSS -->
-        <!--<script type="text/javascript">{% include loadCSS.js %}</script>-->
-
         {% seo %}
     </head>
     <body>
@@ -32,7 +29,7 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
 
-       <!-- <div class="reveal medium" id="exampleModal1" data-reveal>
+        <!--<div class="reveal medium" id="exampleModal1" data-reveal>
             <div class="row">
                 <div class="small-12 columns text-center">
                     <p class="lead">Thank you for visiting my portfolio!</p>
@@ -43,6 +40,7 @@
                 </div>
             </div>
         </div>-->
+
         {% include header.html %}
         {{ content }}
         {% include footer.html %}
@@ -60,16 +58,6 @@
             {% endfor %}
             };
         </script>
-        <!-- Load css -->
-       <!-- <script>
-            loadCSS('/assets/css/app.css', false, 'screen');
-        </script>
-
-        <noscript>
-            <link rel="stylesheet" href="/assets/css/app.css">
-        </noscript>-->
-
-
         <script async src="{{ '/assets/js/app.js' | prepend: site.baseurl }}"></script>
 
         <script id="dsq-count-scr" src="//evrodesigns.disqus.com/count.js" async></script>

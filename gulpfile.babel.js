@@ -7,6 +7,9 @@ var sequence = require('run-sequence');
 var cp       = require('child_process');
 var critical = require('critical');
 var postcss = require('gulp-postcss');
+var uglify = require('gulp-uglify');
+var pump = require('pump');
+
 
 const cleanCSS = require('gulp-clean-css');
 const babel = require('gulp-babel');

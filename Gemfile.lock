@@ -74,7 +74,7 @@ DEPENDENCIES
   jekyll
   jekyll-paginate
   jekyll-seo-tag (~> 1.1)
-  jekyll-sitemap (~> 0.12.0)
+  jekyll-sitemap
   rubygems-update (~> 2.6, >= 2.6.8)
   therubyracer
   wiselinks

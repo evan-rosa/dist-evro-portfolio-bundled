@@ -1,4 +1,4 @@
-{% assign sorted = (site.topic-all | sort: 'date') | reverse %}
+{% assign doclist = site.topic-all | sort: 'date' | reverse %}
 {% for topic-all in sorted %}
 <div class="medium-6 large-4 small-12 columns article-test">
     <article class="article-card">

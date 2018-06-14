@@ -101,7 +101,13 @@ gulp.task('jekyll:reset', ['jekyll'], function () {
 // Compile Sass into CSS
 // In production, the CSS is compressed
 gulp.task('sass', function() {
-
+    var uncss = $.if(isProduction, $.postcss({
+        html: ['src/**/*.html'],
+        ignore: [
+            new RegExp('.foundation-mq'),
+            new RegExp('^\.is-.*')
+        ]
+    }));
 
    // var minifycss = $.if(isProduction, $.minifyCss());
 
@@ -114,7 +120,7 @@ gulp.task('sass', function() {
         .pipe($.autoprefixer({
         browsers: COMPATIBILITY
     }))
-        .pipe(postcss())
+        .pipe(uncss)
         .pipe(cleanCSS())
         .pipe($.if(!isProduction, $.sourcemaps.write()))
         .pipe(gulp.dest('dist/assets/css'))

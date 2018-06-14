@@ -122,29 +122,29 @@ canonical-url: https://evanrosaportfolio.com/blog/
             <ul class="orbit-container block-animate clearfix">
                 <li class="is-active orbit-slide clearfix">
                    <div class="row">
-                       {% include card.html %}
+                       {% include_relative /_includes/card-all.html %}
                    </div>
                 </li>
 
                 <li class="is-active orbit-slide">
                     <div class="row">
-                        {% include card-ux.html %}
+                        {% include_relative /_includes/card-ux.html %}
                     </div>
                 </li>
 
                 <li class="is-active orbit-slide">
                     <div class="row">
-                        {% include card-dev.html %}
+                        {% include_relative /_includes/card-dev.html %}
                     </div>
                 </li>
 
                 <li class="is-active orbit-slide">
                     <div class="row">
-                        {% include card-analytics.html %}
+                        {% include_relative /_includes/card-analytics.html %}
                     </div>
                 </li>
             </ul>
         </div>
     </div>
 </section>
-{% include contact.html %}
+{% include_relative /_includes/contact.html %}

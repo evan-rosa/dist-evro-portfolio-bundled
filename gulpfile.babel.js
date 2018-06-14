@@ -84,7 +84,7 @@ gulp.task('copy', function() {
 
 
 gulp.task('jekyll', () => {
-    const jekyll = cp.spawn('bundle exec jekyll', ['build', '--watch','--incremental','--drafts','--config', 'src/_config.yml' ,'--source', 'src', '--destination', 'dist']);
+    const jekyll = cp.spawn('jekyll', ['build', '--watch','--incremental','--drafts','--config', 'src/_config.yml' ,'--source', 'src', '--destination', 'dist']);
 
     const jekyllLogger = (buffer) => {
         buffer.toString()

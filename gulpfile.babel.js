@@ -132,7 +132,7 @@ gulp.task('sass', function() {
 // Combine JavaScript into one file
 // In production, the file is minified
 gulp.task('javascript', function() {
-    var uglify = $.if(isProduction, $.uglify()
+    var uglify = $.if(isProduction, $.uglify({compress: {drop_console: true}})
                       .on('error', function (e) {
         console.log(e);
     }));

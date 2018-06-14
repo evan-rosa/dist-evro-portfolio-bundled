@@ -1,0 +1,140 @@
+<footer class="footer">
+    <div class="row">
+        <div class="small-12 medium-6 large-5 columns f-mobile">
+            {% if page.url == "/" %}
+            <a id="foot-logo" href="#home">
+                <p class="name"><strong>Evan Rosa</strong></p>
+            </a>
+            {% else %}
+            <a id="foot-logo" href="/index.html">
+                <div class="logo-svg-3">
+                    <object data="/assets/img/svg/logo-wht.svg" type="image/svg+xml"><img src="{{site.baseurl}}/assets/img/pics/logo.png" alt="Evan Rosa's Web Portfolio Logo"></object>
+                </div>
+                <p class="name"><strong>Evan Rosa</strong></p>
+            </a>
+            {% endif %}
+
+            <nav>
+                <ul class="menu" data-magellan>
+                    <li>
+                        {% if page.url == "/" %}
+                        <a id="foot-who" href="#about"><strong>About</strong></a>
+                        {% else %}
+                        <a id="foot-who" href="/#about"><strong>About</strong></a>
+                        {% endif %}
+                    </li>
+                    <li>
+                        {% if page.url == "/" %}
+                        <a id="foot-what" href="#services"><strong>Services</strong></a>
+                        {% else %}
+                        <a id="foot-what" href="/#services"><strong>Services</strong></a>
+                        {% endif %}
+
+                    </li>
+                    <li>
+                        {% if page.url == "/" %}
+                        <a id="foot-exp" href="#experience"><strong>Resume</strong></a>
+                        {% else %}
+                        <a id="foot-exp" href="/#experience"><strong>Resume</strong></a>
+                        {% endif %}
+                    </li>
+                    <li>
+                        <a id="foot-contact" href="#contact"><strong>Contact</strong></a>
+                    </li>
+                    <li>
+                        <a data-description="Blog" id="foot-blog" href="/blog"><strong>Blog</strong></a>
+                    </li>
+                </ul>
+            </nav>
+               <!--GCSE Search Bar -->
+                <div>
+                    <form action="{{site.baseurl}}/search/" method="get">
+                        <div class="row align-center">
+                            <div class="small-12 columns">
+                                <input type="text" id="search-box" name="q" required>
+                            </div>
+                        </div>
+                        <div class="row align-center header-mobile-search">
+                            <div class="small-12 columns">
+                                <input id="foot-search" class="hollow tiny button" type="submit" value="search">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+
+
+
+    <div class="f-mobile small-12 medium-6 large-4 columns f-pad">
+        <ul class="contact">
+            <li>
+
+                <a href="https://www.google.com/maps/dir//,+425+L+St+NW,+Washington,+DC+20001/@38.9040785,-77.0524392,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89b7b78cb5224875:0x8472e2656940e261!2m2!1d-77.0173339!2d38.9040838" target="_blank" data-description="Footer Map Icon">
+                        <div class="foot-icon show-for-medium">
+                            <object data="/assets/img/svg/fi-marker.svg" type="image/svg+xml"><img src="{{site.baseurl}}/assets/img/pics/fi-marker.png" alt="Evan Google Map"></object>
+                        </div>
+                    </a>
+                <a href="https://www.google.com/maps/dir//,+425+L+St+NW,+Washington,+DC+20001/@38.9040785,-77.0524392,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x89b7b78cb5224875:0x8472e2656940e261!2m2!1d-77.0173339!2d38.9040838" target="_blank" data-description="Footer Map Text"><strong>Washington, D.C.</strong></a>
+
+            </li>
+            <li>
+                <p>
+                    <a href="tel:571-762-1956" data-description="Footer Phone Icon">
+                        <div class="foot-icon show-for-medium">
+                            <object data="/assets/img/svg/fi-telephone.svg" type="image/svg+xml"><img src="{{site.baseurl}}/assets/img/pics/fi-telephone.png" alt="Evan Rosa's Phone Number"></object>
+                        </div>
+                    </a>
+                    <a href="tel:571-762-1956" data-description="Footer Phone Text"><strong>(571) 762-1956</strong></a>
+                </p>
+            </li>
+            <li>
+                <p>
+                <a href="mailto:erosa26@gmail.com" data-description="Footer Email Icon">
+                    <div class="foot-icon show-for-medium">
+                        <object data="/assets/img/svg/mail.svg" type="image/svg+xml"><img src="{{site.baseurl}}/assets/img/pics/mail.png" alt="Evan Rosa's Email"></object>
+                    </div>
+                </a>
+                    <a href="mailto:erosa26@gmail.com" data-description="Footer Email Text"><strong>erosa26@gmail.com</strong></a>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="tes f-mobile small-12 medium-12 large-3 columns">
+        <div class="row share">
+            <div class="small-12 columns">
+                <ul id="s-list" class="no-bullet">
+                    <li>
+                        <a href="https://www.linkedin.com/in/erosa26" target="_blank" data-description="Main LinkedIn Click">
+                            <div class="social-svg">
+                                <object data="/assets/img/svg/linkedin.svg" type="image/svg+xml"><img src="/assets/img/pics/linkedin.png" alt="Evan Rosa LinkedIn Profile"></object>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/erosa26" target="_blank" data-description="Main Facebook Click">
+                            <div class="social-svg">
+                                <object data="/assets/img/svg/F_icon.svg" type="image/svg+xml"><img src="/assets/img/pics/F_icon.png" alt="Evan Rosa's Facebook Page"></object>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/evr01" target="_blank" data-description="Main Github Click">
+                            <div class="social-svg">
+                                <object data="/assets/img/svg/github.svg" type="image/svg+xml"><img src="/assets/img/pics/github.png" alt="Evan Rosa GitHub Page"></object>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="copywrite">
+                    <p>©2018 Evan Rosa | Washington, D.C. <br> Created with <a class="anchor-body-color" data-description="foot-zurb" href="http://foundation.zurb.com/" target="_blank">Foundation 6</a> and <a class="anchor-body-color" data-description="foot-jek" href="https://jekyllrb.com/" target="_blank">Jekyll</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</footer>

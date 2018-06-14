@@ -132,14 +132,14 @@ gulp.task('sass', function() {
 // Combine JavaScript into one file
 // In production, the file is minified
 gulp.task('javascript', function() {
-    var uglify = $.if(isProduction, $.uglify({compress: {drop_console: true}})
+    var uglify = $.if(isProduction, $.uglify()
                       .on('error', function (e) {
         console.log(e);
     }));
 
     return gulp.src(PATHS.javascript)
         .pipe($.sourcemaps.init())
-        .pipe(babel({presets: ['env']}))
+        .pipe(babel())
         .pipe($.concat('app.js'))
         .pipe(uglify)
         .pipe($.if(!isProduction, $.sourcemaps.write()))

@@ -102,8 +102,146 @@
                     </div>
                 </div>
 
-             
-         
+                <div class="small-12 medium-3 columns">
+                    <div class="text-center">
+
+                        <a data-open="thank-search-btn" data-toggle="thank-search-btn"  class="large button searchBTN"><strong>Search</strong></a>
+                        <div class="reveal" id="thank-search-btn" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+                            <div class="float-right">
+                                <button class="close-button" data-close aria-label="Close modal" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+
+                            <h2 class="text-center x-space"><strong>Evan's Blog Search</strong></h2>
+
+                            <form action="/search/" method="get">
+                                <div class="row">
+                                    <div class="small-12 columns">
+                                        <label for="search-box">Search</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="small-9 columns">
+                                        <input type="text" id="search-box" name="q">
+                                    </div>
+                                    <div class="small-3 columns">
+                                        <input class="small button" type="submit" value="search">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="small-12 medium-3 columns">
+                    <div class="text-center">
+                        <a data-open="thank-subscribe-btn" data-toggle="thank-subscribe-btn"  class="large button searchBTN"><strong>Contact</strong></a>
+                        <div class="reveal" id="thank-subscribe-btn" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+                            <div class="float-right">
+                                <button class="close-button" data-close aria-label="Close modal" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+
+                            <h2 class="text-center x-space"><strong>Contact Evan Rosa</strong></h2>
+
+                            <form id="mail-contact" name="evroD-contact-form" action="thank-you" data-abide novalidate netlify netlify-honeypot="bot-field">
+                                <div class="contactForm">
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                        <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                    <h4>Contact Info</h4>
+                                    <label class="hide">Bot field:
+                                        <input name="bot-field">
+                                    </label>
+                                    <label>Name:
+                                        <input id="mail-name" pattern="text" required type="text" placeholder="Your Name" name="name">
+                                        <span class="form-error">This field is required.</span>
+                                    </label>
+                                    <label>Email:
+                                        <input id="mail-email" required pattern="email" type="email" placeholder="yourEmail@company.com" name="email">
+                                        <span class="form-error">This field is required.</span>
+                                    </label>
+                                    <label>Phone:
+                                        <input id="mail-fone" type="tel" placeholder="555-867-5309" name="phone">
+                                    </label>
+                                    <label>Website:
+                                        <input id="mail-site" type="url" placeholder="yourCompany.com" name="website">
+                                    </label>
+                                    <h4>Product Details</h4>
+                                    <p>This section allows me to understand and determine the best solution for your circumstances.</p>
+                                    <label>Budget:
+                                        <input id="mail-budget" type="number" placeholder="Ideal Budget" name="budget">
+                                    </label>
+                                    <label>Your Ideal Start Date:
+                                        <select name="StartDate">
+                                            <option value="1-2 weeks">1-2 weeks</option>
+                                            <option value="2-4 weeks">2-4 weeks</option>
+                                            <option value="1-2 month">1-2 Months</option>
+                                            <option value="2-3 month">2-3 Months</option>
+                                            <option value="3+ month">3+ Months</option>
+                                        </select>
+                                    </label>
+                                    <label>
+                                        Product Description:
+                                        <textarea id="mail-text" pattern="text" required type="text" placeholder="What you would like to build" name="message"></textarea><span class="form-error">This field is required.</span>
+                                    </label>
+                                    <fieldset>
+                                        <button id="submit-cf" class="expanded button" type="submit" value="Submit" data-description="Contact Form Submit">SEND</button>
+                                    </fieldset>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="small-12 medium-3 columns">
+                    <div class="text-center">
+                        <a data-open="thank-subscribe-btn" data-toggle="thank-subscribe-btn"  class="large button searchBTN"><strong>Subscribe</strong></a>
+                        <div class="reveal" id="thank-subscribe-btn" data-reveal data-close-on-click="true" data-animation-in="fade-in" data-animation-out="fade-out">
+                            <div class="float-right">
+                                <button class="close-button" data-close aria-label="Close modal" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+
+                            <h2 class="text-center x-space"><strong>Subscribe to Evan's Blog</strong></h2>
+
+                            <form id="mail-contact" name="evroD-blog-subscribe" action="thank-you" data-abide novalidate netlify netlify-honeypot="bot-field">
+                                <div class="contactForm">
+                                    <p>Enter your name and email below to sign-up</p>
+                                    <label class="hide">Bot field:
+                                        <input name="bot-field">
+                                    </label>
+                                    <label>
+                                        <input class="blog-name" id="mail-name" pattern="text" required type="text" placeholder="Your Name" name="name">
+                                        <span class="form-error">This field is required.</span>
+                                    </label>
+                                    <label>
+                                        <input class="blog-email" id="mail-email" required pattern="email" type="email" placeholder="yourEmail@company.com" name="email">
+                                        <span class="form-error">This field is required.</span>
+                                    </label>
+
+                                    <fieldset>
+                                        <button id="submit-cf" class="expanded button" type="submit" value="Submit" data-description="Contact Form Submit">Subscribe</button>
+                                    </fieldset>
+                                    <div data-abide-error class="alert callout" style="display: none;">
+                                        <p><i class="fi-alert"></i> There are some errors in your form.</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                    </div>
+                </div>
 
             </div>
 

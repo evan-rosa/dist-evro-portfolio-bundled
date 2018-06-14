@@ -2,7 +2,7 @@
 layout: posts
 img: ux-xl.jpg
 svg: metrics-blog-icon.svg
-category: Web Design
+category: Digital Marketing
 title: Website Planning 101
 description: Explaining the various workflow phases to build a brand new website - Evan Rosa's Portfolio
 author: Evan Rosa

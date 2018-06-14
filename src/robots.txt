@@ -1,6 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://evanrosaportfolio.com/sitemap.xml
-
-User-agent: libwww-perl
-Disallow: /

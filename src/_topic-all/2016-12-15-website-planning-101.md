@@ -2,7 +2,7 @@
 layout: posts
 img: ux-xl.jpg
 svg: metrics-blog-icon.svg
-category: Digital Marketing
+category: Web Development
 title: Website Planning 101
 description: Explaining the various workflow phases to build a brand new website - Evan Rosa's Portfolio
 author: Evan Rosa
@@ -11,7 +11,7 @@ comments: true
 canonical-url: https://evanrosaportfolio.com/blog/topic-all/2016-12-15-website-planning-101/
 ---
 
-<article>
+
 <p>Launching a website, whether it’s an online store, a blog, or even a web app can be a daunting task. There’s so much that goes into planning, designing, and developing a site that a lot of people just simply overlook. My goal today will be to explain, as best I can, the multiple steps needed to get a website or web app off the ground, from conceptualizing and planning to launch.</p>
 
 <p>Personally, I like to start all of my projects with an outline that lays out the ground work for my project. This way, I have everything documented and I’ll be able to reference it later if I get off track. The steps that we’ll discuss are planning and content, architecture, design, development and testing, marketing, tracking/maintenance and launch. I’d like to note that this is solely my view on planning a build; it’s completely up to you to use this as a template or update for your own personal use.</p>
@@ -47,4 +47,3 @@ The site design phase will give you a preview of your site before it launches. G
 
 <p>Finally, now that you’ve completed the entire process you’re ready to launch your new site. In terms of time, from planning to launch, it could take about 2.5 to 3 months minimum to build out a new site. It takes a lot of work but it pays off! If you’re interested in learning more I’d love to hear from you! Leave a comment below or send an email. Thanks for reading and look out for my next post soon!   </p>
 
-</article>

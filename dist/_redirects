@@ -1,0 +1,20 @@
+#Redirects LIVE
+http://evanrosaportfolio.com                          https://evanrosaportfolio.com                 200
+http://www.evanrosaportfolio.com                      https://evanrosaportfolio.com                 200
+https://www.evanrosaportfolio.com                     https://evanrosaportfolio.com                 200
+https://www.evanrosaportfolio.com/index.html          https://evanrosaportfolio.com                 200
+http://www.evanrosaportfolio.com/index.html           https://evanrosaportfolio.com                 200
+https://evanrosaportfolio.com/index.html              https://evanrosaportfolio.com                 301
+http://evanrosaportfolio.com/index.html               https://evanrosaportfolio.com                 200
+
+#404
+/*													  /404.html										404
+
+#Redirects DEV
+http://dev-evanrosaportfolio.netlify.com/index.html   http://dev-evanrosaportfolio.netlify.com      301
+http://www.dev-evanrosaportfolio.netlify.com/         http://www.dev-evanrosaportfolio.netlify.com  301
+
+#Redirect LOCAL
+https://localhost:8001/blog                     https://localhost:8001/blog/            200
+http://localhost:8000/index.html                http://localhost:8000                   301
+

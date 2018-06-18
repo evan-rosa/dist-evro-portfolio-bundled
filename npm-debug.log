@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'bugs',
+1 verbose cli   'jekyll-foundation-zurb-template' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.4
+4 silly fetchPackageMetaData jekyll-foundation-zurb-template
+5 silly fetchNamedPackageData jekyll-foundation-zurb-template
+6 silly mapToRegistry name jekyll-foundation-zurb-template
+7 silly mapToRegistry using default registry
+8 silly mapToRegistry registry http://registry.npmjs.org/
+9 silly mapToRegistry data Result {
+9 silly mapToRegistry   raw: 'jekyll-foundation-zurb-template',
+9 silly mapToRegistry   scope: null,
+9 silly mapToRegistry   escapedName: 'jekyll-foundation-zurb-template',
+9 silly mapToRegistry   name: 'jekyll-foundation-zurb-template',
+9 silly mapToRegistry   rawSpec: '',
+9 silly mapToRegistry   spec: 'latest',
+9 silly mapToRegistry   type: 'tag' }
+10 silly mapToRegistry uri http://registry.npmjs.org/jekyll-foundation-zurb-template
+11 verbose request uri http://registry.npmjs.org/jekyll-foundation-zurb-template
+12 verbose request no auth needed
+13 info attempt registry request try #1 at 7:26:00 PM
+14 verbose request using bearer token for auth
+15 verbose request id 6340000a47db9fa0
+16 http request GET http://registry.npmjs.org/jekyll-foundation-zurb-template
+17 http 200 http://registry.npmjs.org/jekyll-foundation-zurb-template
+18 verbose headers { date: 'Mon, 18 Jun 2018 23:26:05 GMT',
+18 verbose headers   'content-type': 'application/json; charset=UTF-8',
+18 verbose headers   'transfer-encoding': 'chunked',
+18 verbose headers   connection: 'keep-alive',
+18 verbose headers   'set-cookie': [ '__cfduid=d8e2e0f90733a0a12c21ba86feb1d91f81529364365; expires=Tue, 18-Jun-19 23:26:05 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+18 verbose headers   'cache-control': 'max-age=300',
+18 verbose headers   'cf-cache-status': 'MISS',
+18 verbose headers   'cf-ray': '42d184d481aa9580-IAD',
+18 verbose headers   etag: 'W/"fb0a1edf17d2513bf9d9c20a76f028bd"',
+18 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+18 verbose headers   'last-modified': 'Sun, 27 May 2018 05:15:16 GMT',
+18 verbose headers   vary: 'accept-encoding, accept',
+18 verbose headers   server: 'cloudflare',
+18 verbose headers   'content-encoding': 'gzip' }
+19 silly get cb [ 200,
+19 silly get   { date: 'Mon, 18 Jun 2018 23:26:05 GMT',
+19 silly get     'content-type': 'application/json; charset=UTF-8',
+19 silly get     'transfer-encoding': 'chunked',
+19 silly get     connection: 'keep-alive',
+19 silly get     'set-cookie': [ '__cfduid=d8e2e0f90733a0a12c21ba86feb1d91f81529364365; expires=Tue, 18-Jun-19 23:26:05 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+19 silly get     'cache-control': 'max-age=300',
+19 silly get     'cf-cache-status': 'MISS',
+19 silly get     'cf-ray': '42d184d481aa9580-IAD',
+19 silly get     etag: 'W/"fb0a1edf17d2513bf9d9c20a76f028bd"',
+19 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+19 silly get     'last-modified': 'Sun, 27 May 2018 05:15:16 GMT',
+19 silly get     vary: 'accept-encoding, accept',
+19 silly get     server: 'cloudflare',
+19 silly get     'content-encoding': 'gzip' } ]
+20 verbose get saving jekyll-foundation-zurb-template to /Users/Evro/.npm/registry.npmjs.org/jekyll-foundation-zurb-template/.cache.json
+21 verbose correctMkdir /Users/Evro/.npm correctMkdir not in flight; initializing
+22 verbose stack TypeError: Cannot convert undefined or null to object
+22 verbose stack     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:125:29)
+22 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+22 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+22 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+22 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:241:18
+22 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+23 verbose cwd /Users/Evro/Documents/Career/evro-designs/projects/evro-site/main-site/foundation/dist-evrodesigns-bundle-update
+24 error Darwin 17.5.0
+25 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "bugs" "jekyll-foundation-zurb-template"
+26 error node v6.11.4
+27 error npm  v3.10.10
+28 error Cannot convert undefined or null to object
+29 error If you need help, you may report this error at:
+29 error     <https://github.com/npm/npm/issues>
+30 verbose exit [ 1, true ]

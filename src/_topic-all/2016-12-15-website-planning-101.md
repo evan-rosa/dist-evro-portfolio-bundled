@@ -4,7 +4,7 @@ img: ux-xl.jpg
 svg: metrics-blog-icon.svg
 category: Web Development
 title: Website Planning 101 | Evan Rosa's Blog
-description: Explaining the various workflow phases to build a brand new website | Evan Rosa's Blog
+description: Explaining the various workflow phases to build a brand new website - Evan Rosa's Blog
 author: Evan Rosa
 comments: true
 # other options

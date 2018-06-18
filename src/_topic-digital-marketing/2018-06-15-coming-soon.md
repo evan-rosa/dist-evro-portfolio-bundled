@@ -4,7 +4,7 @@ img: ux-xl.jpg
 svg: metrics-blog-icon.svg
 category: Digital Marketing
 title: Coming Soon
-description: Content Coming Soon | Evan Rosa's Portfolio
+description: Content Coming Soon - Evan Rosa's Portfolio
 author: Evan Rosa
 comments: true
 # other options

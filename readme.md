@@ -2,10 +2,10 @@
 
 To install run:
 
-delete gem lock file
-bower install 
-yarn 
-bundle install
+delete gem lock file,
+bower install,
+yarn,
+bundle install,
 npm start or build cmd
 
 
